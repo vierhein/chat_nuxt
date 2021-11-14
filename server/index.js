@@ -23,12 +23,12 @@ async function start () {
   app.use(nuxt.render)
 
   // Listen the server
-  server.listen(port, () => {
+  server.listen(80, () => {
     consola.ready({
-      message: `Server listening on http://${host}:${port}`,
+      message: `Server listening on http://${host}:80`,
       badge: true
     })
   })
-  
+
 }
 start()
