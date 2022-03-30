@@ -1,6 +1,6 @@
 <template>
-  <v-app app dark>
-    <v-navigation-drawer app v-model="drawer">
+  <v-app app>
+    <v-navigation-drawer app v-model="drawer" mobile-breakpoint="650">
       <v-card
     class="mx-auto"
     max-width="500"
@@ -35,7 +35,6 @@
       </v-list-item>
     </v-list>
 
-    <v-divider></v-divider>
 
   </v-card>
     </v-navigation-drawer>
@@ -47,7 +46,7 @@
         <v-toolbar-title>Room chat {{user.room}}</v-toolbar-title>
       </v-app-bar>
     <v-content>
-      <div>
+      <div style="height=100%">
         <nuxt/>
       </div>
     </v-content>
