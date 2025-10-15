@@ -2,6 +2,8 @@
 
 > My luminous Nuxt.js project
 
+node version: 16.16.0
+
 ## Build Setup
 
 ```bash
